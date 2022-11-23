@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login de usuario</title>
+
+    <!-- CSS Boostrap-->
+    <link rel="stylesheet" href="public/bootstrap/bootstrap.min.css">
+
+    <link rel="stylesheet" href="public/css/menu.css">
+</head>
+
+<body>
+    <!-- Login de usuario -->
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <img src="public/img/hAyuntamiento.png" id="icon" alt="User Icon" />
+                <h1>Soporte Técnico</h1>
+            </div>
+
+            <!-- Login Form -->
+            <form id="frmLogin" method="POST" onsubmit="return loginUsuario()">
+                <input type="text" id="login" class="fadeIn second" name="login" placeholder="Usuario" required />
+                <input type="password" id="password" class="fadeIn third" name="password" placeholder="Contraseña" required />
+                <input type="submit" class="fadeIn fourth" value="Entrar" />
+            </form>
+
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+                <a class="underlineHover" href="#" data-bs-toggle="modal" data-bs-target="#modalContacto">Contactar con el administrador</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalContacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    Sí no tienes una credencial llama al: 5512345678
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Boostrap -->
+    <script src="public/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Sweet alert 2 -->
+    <script src="public/sweetalert2/sweetalert2@11.js"></script>
+    
+    <script src="public/js/usuarios/login.js"></script>
+    
+</body>
+
+</html>
